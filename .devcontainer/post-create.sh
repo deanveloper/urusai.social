@@ -13,6 +13,7 @@ git checkout -- Gemfile.lock
 
 # [re]create, migrate, and seed the test database
 RAILS_ENV=test ./bin/rails db:setup
+RAILS_ENV=development ./bin/rails db:setup
 
 # Precompile assets for development
 RAILS_ENV=development ./bin/rails assets:precompile
